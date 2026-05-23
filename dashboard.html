@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Team Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="main-container">
+
+    <div class="sidebar">
+        <h2>Team Task Manager</h2>
+
+        <ul id="sidebarMenu"></ul>
+
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <div class="content">
+
+        <!-- <h1>Dashboard</h1> -->
+         <h1 id="dashboardSection">Dashboard</h1>
+
+        <div class="stats">
+            <div class="card">
+                <h3>Total Tasks</h3>
+                <p id="tasks">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Completed</h3>
+                <p id="completed">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Pending</h3>
+                <p id="pending">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Overdue</h3>
+                <p id="overdue">0</p>
+            </div>
+        </div>
+
+        <div id="adminControls">
+
+            <div class="project-section" id="projectSection">
+                <h2>Create Project</h2>
+
+                <input type="text" id="projectTitle" placeholder="Project Title">
+                <input type="text" id="projectDesc" placeholder="Project Description">
+
+                <button onclick="createProject()">Create Project</button>
+            </div>
+
+            <div class="all-projects" id="allProjectsSection">
+                <h2>Projects</h2>
+                <div id="projectList"></div>
+            </div>
+
+            <div class="task-section" id="taskSection">
+                <h2>Create Task</h2>
+
+                <input type="text" id="taskTitle" placeholder="Task Title">
+                <input type="text" id="taskDesc" placeholder="Task Description">
+                <input type="date" id="dueDate">
+
+                <select id="projectSelect">
+                    <option value="">Select Project</option>
+                </select>
+
+                <select id="memberSelect">
+                    <option value="">Assign To Member</option>
+                </select>
+
+                <select id="priority">
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                </select>
+
+                <button onclick="createTask()">Create Task</button>
+            </div>
+
+            <div class="manage-members" id="manageMembersSection">
+                <h2>Manage Members</h2>
+                <div id="userList"></div>
+
+             </div>
+
+        </div>
+
+        <!-- <div class="all-tasks"> -->
+            <div class="all-tasks" id="allTasksSection">
+            <h2>All Tasks</h2>
+            <div id="taskList"></div>
+            </div>
+
+    </div>
+
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>
