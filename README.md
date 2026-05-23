@@ -34,11 +34,8 @@ A full-stack Team Task Management Web Application built using Node.js, Express.j
 
 ## Live Deployment
 
-### Frontend
 https://team-task-manager-final-mpq2.vercel.app/
 
-### Backend
-https://team-task-manager-final-production-9108.up.railway.app/
 
 ## Installation
 
