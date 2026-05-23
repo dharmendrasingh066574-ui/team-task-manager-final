@@ -1,5 +1,4 @@
-const API = "team-task-manager-final-production-9108.up.railway.app";
-
+const API = "https://team-task-manager-final-production-9108.up.railway.app";
 // ================= SIDEBAR =================
 
 function loadSidebar(){
