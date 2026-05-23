@@ -45,4 +45,4 @@ https://team-task-manager-final-production-9108.up.railway.app/
 ### Clone Repository
 
 ```bash
-git clone YOUR_GITHUB_REPO_LINK
+https://github.com/dharmendrasingh066574-ui/team-task-manager-final
