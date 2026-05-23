@@ -1,4 +1,4 @@
-const API = "http://localhost:5000";
+const API = "https://team-task-manager-final-production-9108.up.railway.app/";
 
 // ================= SIGNUP =================
 
